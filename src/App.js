@@ -5,13 +5,7 @@ import logo from './logo.svg';
 import './App.css';
 import Weather from './components/Weather';
 import * as API_CONFIG from './configuration/apiconfig';
-// function App() {
-//   return (
-//     <div className="App">
-//       <h1>Hello Rahul</h1>
-//     </div>
-//   );
-// }
+
 
 export const API_KEY = API_CONFIG.API_KEY;
 export const URL = API_CONFIG.URL;
