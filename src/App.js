@@ -4,7 +4,7 @@ import Form from "./components/Form";
 import logo from './logo.svg';
 import './App.css';
 import Weather from './components/Weather';
-
+import * as API_CONFIG from './configuration/apiconfig';
 // function App() {
 //   return (
 //     <div className="App">
@@ -12,9 +12,9 @@ import Weather from './components/Weather';
 //     </div>
 //   );
 // }
-const API_KEY = "a023945cf736605110c81ebc422b1f71";
-const URL = "https://api.openweathermap.org/data/2.5/weather";
 
+export const API_KEY = API_CONFIG.API_KEY;
+export const URL = API_CONFIG.URL;
 
 class App extends React.Component{
   state = {
