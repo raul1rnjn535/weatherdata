@@ -23,6 +23,7 @@ class App extends React.Component{
     e.preventDefault();
     const city = e.target.elements.cityName.value;
     const country = e.target.elements.countryName.value;
+    console.log(API_KEY,URL);
     if(city && country){
       const request = URL + `?q=${city},${country}&appid=${API_KEY}`;
       const response = await fetch(request);
